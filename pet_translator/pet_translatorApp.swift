@@ -7,11 +7,13 @@
 
 import SwiftUI
 
+
 @main
-struct pet_translatorApp: App {
+struct MyApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
     }
 }
+

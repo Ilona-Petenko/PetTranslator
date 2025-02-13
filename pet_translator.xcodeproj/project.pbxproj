@@ -9,16 +9,34 @@
 /* Begin PBXBuildFile section */
 		DA5EE6722D554B1600B1CDCF /* pet_translatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5EE6712D554B1600B1CDCF /* pet_translatorApp.swift */; };
 		DA5EE6742D554B1600B1CDCF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5EE6732D554B1600B1CDCF /* ContentView.swift */; };
-		DA5EE6762D554B1800B1CDCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA5EE6752D554B1800B1CDCF /* Assets.xcassets */; };
-		DA5EE6792D554B1800B1CDCF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA5EE6782D554B1800B1CDCF /* Preview Assets.xcassets */; };
+		DAA72EAB2D59696000063BDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA72EAA2D59696000063BDE /* Assets.xcassets */; };
+		DACBDE452D5C070600DA9795 /* Vector.png in Resources */ = {isa = PBXBuildFile; fileRef = DACBDE442D5C070600DA9795 /* Vector.png */; };
+		DACBDE482D5C0A8F00DA9795 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACBDE472D5C0A8F00DA9795 /* Gradient.swift */; };
+		DACBDE542D5D699500DA9795 /* animation.gif in Resources */ = {isa = PBXBuildFile; fileRef = DACBDE532D5D699500DA9795 /* animation.gif */; };
+		DAE3A8DA2D5BF82B0013C560 /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE3A8D92D5BF82B0013C560 /* SettingsPage.swift */; };
+		DAE3A8DD2D5BF8BE0013C560 /* ProcessingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE3A8DC2D5BF8BE0013C560 /* ProcessingPage.swift */; };
+		DAE3A8E12D5BF9150013C560 /* ResultPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE3A8E02D5BF9150013C560 /* ResultPage.swift */; };
+		DAE3A8E32D5BF9470013C560 /* TranslationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE3A8E22D5BF9470013C560 /* TranslationPage.swift */; };
+		DAE3A8E52D5BF9820013C560 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE3A8E42D5BF9820013C560 /* AudioRecorder.swift */; };
+		DAE3A8E92D5BFA6B0013C560 /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE3A8E82D5BFA6B0013C560 /* BottomBar.swift */; };
+		DAE3A8EF2D5BFFE20013C560 /* gif_view 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE3A8EE2D5BFFE20013C560 /* gif_view 2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DA5EE66E2D554B1600B1CDCF /* pet_translator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pet_translator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA5EE6712D554B1600B1CDCF /* pet_translatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pet_translatorApp.swift; sourceTree = "<group>"; };
 		DA5EE6732D554B1600B1CDCF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		DA5EE6752D554B1800B1CDCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DA5EE6782D554B1800B1CDCF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DAA72EAA2D59696000063BDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DACBDE442D5C070600DA9795 /* Vector.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vector.png; sourceTree = "<group>"; };
+		DACBDE472D5C0A8F00DA9795 /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		DACBDE532D5D699500DA9795 /* animation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = animation.gif; sourceTree = "<group>"; };
+		DAE3A8D92D5BF82B0013C560 /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
+		DAE3A8DC2D5BF8BE0013C560 /* ProcessingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingPage.swift; sourceTree = "<group>"; };
+		DAE3A8E02D5BF9150013C560 /* ResultPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPage.swift; sourceTree = "<group>"; };
+		DAE3A8E22D5BF9470013C560 /* TranslationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationPage.swift; sourceTree = "<group>"; };
+		DAE3A8E42D5BF9820013C560 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		DAE3A8E82D5BFA6B0013C560 /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
+		DAE3A8EE2D5BFFE20013C560 /* gif_view 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "gif_view 2.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +69,17 @@
 		DA5EE6702D554B1600B1CDCF /* pet_translator */ = {
 			isa = PBXGroup;
 			children = (
-				DA5EE6712D554B1600B1CDCF /* pet_translatorApp.swift */,
+				DACBDE472D5C0A8F00DA9795 /* Gradient.swift */,
+				DACBDE442D5C070600DA9795 /* Vector.png */,
 				DA5EE6732D554B1600B1CDCF /* ContentView.swift */,
-				DA5EE6752D554B1800B1CDCF /* Assets.xcassets */,
+				DA5EE6712D554B1600B1CDCF /* pet_translatorApp.swift */,
+				DAE3A8D92D5BF82B0013C560 /* SettingsPage.swift */,
+				DAE3A8DC2D5BF8BE0013C560 /* ProcessingPage.swift */,
+				DAE3A8E02D5BF9150013C560 /* ResultPage.swift */,
+				DAE3A8E22D5BF9470013C560 /* TranslationPage.swift */,
+				DAE3A8E42D5BF9820013C560 /* AudioRecorder.swift */,
+				DAE3A8E82D5BFA6B0013C560 /* BottomBar.swift */,
+				DAE3A8EE2D5BFFE20013C560 /* gif_view 2.swift */,
 				DA5EE6772D554B1800B1CDCF /* Preview Content */,
 			);
 			path = pet_translator;
@@ -62,7 +88,8 @@
 		DA5EE6772D554B1800B1CDCF /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				DA5EE6782D554B1800B1CDCF /* Preview Assets.xcassets */,
+				DAA72EAA2D59696000063BDE /* Assets.xcassets */,
+				DACBDE532D5D699500DA9795 /* animation.gif */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -125,8 +152,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA5EE6792D554B1800B1CDCF /* Preview Assets.xcassets in Resources */,
-				DA5EE6762D554B1800B1CDCF /* Assets.xcassets in Resources */,
+				DACBDE452D5C070600DA9795 /* Vector.png in Resources */,
+				DACBDE542D5D699500DA9795 /* animation.gif in Resources */,
+				DAA72EAB2D59696000063BDE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +166,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA5EE6742D554B1600B1CDCF /* ContentView.swift in Sources */,
+				DAE3A8E52D5BF9820013C560 /* AudioRecorder.swift in Sources */,
+				DAE3A8DD2D5BF8BE0013C560 /* ProcessingPage.swift in Sources */,
+				DAE3A8E32D5BF9470013C560 /* TranslationPage.swift in Sources */,
+				DAE3A8E92D5BFA6B0013C560 /* BottomBar.swift in Sources */,
+				DACBDE482D5C0A8F00DA9795 /* Gradient.swift in Sources */,
+				DAE3A8E12D5BF9150013C560 /* ResultPage.swift in Sources */,
+				DAE3A8EF2D5BFFE20013C560 /* gif_view 2.swift in Sources */,
+				DAE3A8DA2D5BF82B0013C560 /* SettingsPage.swift in Sources */,
 				DA5EE6722D554B1600B1CDCF /* pet_translatorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,11 +308,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"pet_translator/Preview Content\"";
+				DEVELOPMENT_TEAM = Z89DW8A922;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "pet-translator-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = pet_translator;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to your microphone for recording audio.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -300,11 +340,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"pet_translator/Preview Content\"";
+				DEVELOPMENT_TEAM = Z89DW8A922;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "pet-translator-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = pet_translator;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to your microphone for recording audio.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
