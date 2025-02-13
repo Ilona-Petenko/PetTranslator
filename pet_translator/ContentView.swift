@@ -8,7 +8,7 @@ struct ContentView: View {
     @State private var petText = "PET"
     @StateObject private var audioRecorder = AudioRecorder()
     @State private var selectedAnimal: String = "Cat"
-    @State private var selectedPage: String = "Result"
+    @State private var selectedPage: String = "Translator"
 
     var body: some View {
         ZStack {
