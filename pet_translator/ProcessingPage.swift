@@ -32,6 +32,7 @@ struct ProcessingPage: View {
                     .font(.title2)
                     .bold()
                     .padding(.bottom, 50)
+                    .foregroundColor(.black)
                 
                 Image(selectedPetImageName)
                     .resizable()

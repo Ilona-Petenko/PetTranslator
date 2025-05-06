@@ -1,6 +1,8 @@
 import Foundation
 import SwiftUI
 import AVFoundation
+import Speech
+
 
 public class AudioRecorder: ObservableObject {
     @Published var isRecording = false
@@ -12,30 +14,6 @@ public class AudioRecorder: ObservableObject {
     private var audioRecorder: AVAudioRecorder?
     private var recordedFileURL: URL?
 
-    private let catTranslations = [
-        "Purrfect! I’m feeling so cozy right now!",
-        "Feed me, hooman! I’m starving!",
-        "Excuse me, were my ears not clear enough? BACK OFF.",
-        "AH! What was that noise?!",
-        "Ooo, what’s this thing? Let me knock it off the table!"
-    ]
-
-    private let dogTranslations = [
-        "OH MY DOG, YOU’RE HOME!",
-        "I saw you open the fridge. I know there’s food in there.",
-        "Who goes there?! I must protect my hooman!",
-        "You’ve been gone for 5 minutes… that’s too long!",
-        "I stole your sock. What are you gonna do about it?"
-    ]
-
-    private func getRandomTranslation(for animal: String) -> String {
-        if animal == "Cat" {
-            return catTranslations.randomElement() ?? "Meow?"
-        } else if animal == "Dog" {
-            return dogTranslations.randomElement() ?? "Woof?"
-        }
-        return "Unknown animal!"
-    }
 
     func startRecording() {
         AVAudioSession.sharedInstance().requestRecordPermission { granted in
@@ -86,17 +64,23 @@ public class AudioRecorder: ObservableObject {
 
     @MainActor
     private func processTranslation(for animal: String, selectedPage: Binding<String>) {
-        DispatchQueue.main.async {
-            self.isProcessingTranslation = true
-            self.objectWillChange.send()
+        guard let fileURL = recordedFileURL else {
+            translatedText = "No file found"
+            selectedPage.wrappedValue = "Result"
+            return
         }
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-            self.translatedText = self.getRandomTranslation(for: animal)
-            self.isProcessingTranslation = false
-            self.objectWillChange.send()
-
-            selectedPage.wrappedValue = "Result"
+        isProcessingTranslation = true
+        transcribeAudioFile(at: fileURL) { [weak self] transcription in
+            DispatchQueue.main.async {
+                if let transcription = transcription {
+                    self?.translatedText = transcription
+                } else {
+                    self?.translatedText = "Transcription failed"
+                }
+                self?.isProcessingTranslation = false
+                selectedPage.wrappedValue = "Result"
+            }
         }
     }
 
@@ -104,5 +88,26 @@ public class AudioRecorder: ObservableObject {
         isRecording = false
         isProcessingTranslation = false
         translatedText = nil
+    }
+    
+    func transcribeAudioFile(at url: URL, completion: @escaping (String?) -> Void) {
+        let recognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US"))
+        guard let recognizer = recognizer, recognizer.isAvailable else {
+            completion("Speech recognizer not available")
+            return
+        }
+
+        let request = SFSpeechURLRecognitionRequest(url: url)
+
+        recognizer.recognitionTask(with: request) { result, error in
+            if let error = error {
+                print("Transcription error: \(error.localizedDescription)")
+                completion("Error: \(error.localizedDescription)")
+            } else if let result = result {
+                if result.isFinal {
+                    completion(result.bestTranscription.formattedString)
+                }
+            }
+        }
     }
 }

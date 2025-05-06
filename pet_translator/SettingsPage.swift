@@ -36,6 +36,7 @@ struct SettingsPage: View {
                     .font(.largeTitle)
                     .bold()
                     .padding(.top, 50)
+                    .foregroundColor(.black)
                 
                 VStack(spacing: 10) {
                     SettingsRow(title: "Rate Us")
